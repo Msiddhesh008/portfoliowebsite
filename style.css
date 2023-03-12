@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.details {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+.disp{
+  position: fixed;
+  z-index: 2;
+  color: white;
+  font-size: 2rem;
+  right: 45%;
+  bottom: 38%;
+  transform: translate(-20%, -40%);
+
+}
+.ball-text{
+  position: fixed;
+  z-index: 2;
+  color: white;
+  font-size: 5rem;
+  right: 20%;
+  bottom: 40%;
+  transform: translate(-20%, -40%);
+}
+
+@media screen and (max-width: 1024px) {
+  .ball-text {
+    font-size: 3rem;
+    right: 50%;
+    bottom: 60%;
+    transform: translate(50%, 50%);
+  }
+  .disp{
+    font-size: 1.1rem;
+    right: 55%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
