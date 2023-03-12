@@ -1,0 +1,31 @@
+.parallax_wrapper{
+    font-size: 4em;
+    color:white;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 300px;
+
+    text-align: center;
+    align-items: center;
+
+}
+.parallax_wrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.parallax_wrapper .intro_screen{
+    height: 100vh;
+    background-color: tomato;
+}
+
+.parallax_wrapper .outro_screen{
+    height: 100vh;
+    background-color: teal;
+}
+
+.parallax_wrapper .parallax_group{
+    position: relative;
+    height: 100vh;
+    transform-style: preserve-3d;
+}
