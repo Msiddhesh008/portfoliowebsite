@@ -13,7 +13,6 @@ let ball = { frame: 0 };
 for (let i = 0; i < frameCount; i++) {
   const img = new Image();
   img.src = currentFrame(i);
-  console.log(currentFrame(i));
   images.push(img);
 }
 
@@ -48,6 +47,7 @@ gsap.fromTo(
   }
 );
 
+
 gsap.fromTo(
   ".disp",
   {
@@ -68,6 +68,7 @@ gsap.fromTo(
 );
 
 
+
 images[0].onload = render;
 
 function render() {
@@ -77,3 +78,13 @@ function render() {
   context.clearRect(0, 0, canvas.width, canvas.height);
   context.drawImage(images[ball.frame], 0, 0);
 }
+
+
+
+// ===[ Corsor ]===
+
+const cursor = document.querySelector(".cursor")
+  document.addEventListener("mousemove", (e) => {
+  cursor.style.left = e.pageX +'px'
+  cursor.style.top = e.pageY +'px'
+})
